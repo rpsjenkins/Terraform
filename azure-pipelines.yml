@@ -8,6 +8,15 @@ trigger:
 
 pool:
   vmImage: 'ubuntu-latest'
+- task: TerraformTaskV1@0
+  inputs:
+    provider: 'azurerm'
+    command: 'init'
+    backendServiceArm: 'Microsoft Azure Enterprise(d3896bc9-78b1-42d2-90d9-6b0180f44828)'
+    backendAzureRmResourceGroupName: 'RPSResourceGroup'
+    backendAzureRmStorageAccountName: 'rpsterraformstorage'
+    backendAzureRmContainerName: 'statefile'
+    backendAzureRmKey: 'tf/terraform.tfstate'
 
 steps:
 - script: echo Hello, world!
