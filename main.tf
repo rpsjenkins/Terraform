@@ -1,6 +1,7 @@
 resource "azurerm_resource_group" "main" {
   name     = "RPSResourceGroup"
-  location = "${var.location}"
+  #location = "${var.location}"
+  location = "Central US"
 }
 
 resource "azurerm_app_service_plan" "main" {
