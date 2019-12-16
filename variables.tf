@@ -3,5 +3,5 @@ variable "prefix" {
 }
 
 variable "location" {
-  description = "westus"
+  description = "centralus"
 }
