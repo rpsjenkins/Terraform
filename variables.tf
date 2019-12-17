@@ -1,9 +1,10 @@
 variable "prefix" {
-  description = "terraform"
+  description = "prefix"
+  default = "rpsterraform"
 }
 
 variable "location" {
   default = "centralus"
-  #description = "centralus"
+  description = "location"
   
 }
