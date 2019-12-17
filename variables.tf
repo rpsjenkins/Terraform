@@ -3,5 +3,7 @@ variable "prefix" {
 }
 
 variable "location" {
-  description = "centralus"
+  default = "centralus"
+  #description = "centralus"
+  
 }
