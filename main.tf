@@ -1,8 +1,8 @@
 terraform {
   backend "azurerm" {
-    storage_account_name  = "rpsstorage"
-    container_name        = "tstate"
-    key                   = "terraform.tfstate"
+    storage_account_name  = "rpsterraformstorage"
+    container_name        = "statefile"
+    key                   = "prod.terraform.tfstate"
   }
 }
 
