@@ -1,5 +1,5 @@
 resource "azurerm_resource_group" "main" {
-  name     = "RPSResourceGroup1"
+  name     = "RPSResourceGroup"
   location = "${var.location}"
   }
 
