@@ -1,7 +1,7 @@
 resource "azurerm_resource_group" "main" {
   name     = "RPSResourceGroup"
-  location = "${var.location}"  
-}
+  location = "${var.location}"
+  }
 
 resource "azurerm_app_service_plan" "main" {
   name                = "${var.prefix}-asp"
