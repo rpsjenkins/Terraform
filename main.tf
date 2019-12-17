@@ -1,3 +1,11 @@
+terraform {
+  backend "azurerm" {
+    storage_account_name  = "rpsstorage"
+    container_name        = "tstate"
+    key                   = "terraform.tfstate"
+  }
+}
+
 resource "azurerm_resource_group" "main" {
   name     = "RPSResourceGroup"
   location = "${var.location}"
